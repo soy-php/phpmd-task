@@ -165,6 +165,7 @@ class PhpMessDetectorTask extends CliTask
 
     /**
      * @param string $target
+     * @return $this
      */
     public function addTarget($target)
     {
