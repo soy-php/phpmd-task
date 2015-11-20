@@ -1,0 +1,24 @@
+{
+  "name": "soy-php/phpmd-task",
+  "description": "PHPMD task for Soy",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rick Kuipers",
+      "email": "io@rskuipers.com"
+    }
+  ],
+  "require": {
+    "soy-php/soy": "0.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Soy\\PhpMessDetector\\": "src/Soy/PhpMessDetector/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "0.1.x-dev"
+    }
+  }
+}
