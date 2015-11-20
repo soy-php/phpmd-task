@@ -4,7 +4,7 @@ namespace Soy\PhpMessDetector;
 
 use Soy\Task\CliTask;
 
-class PhpMessDetectorTask extends CliTask
+class RunTask extends CliTask
 {
     const REPORT_XML = 'xml';
     const REPORT_HTML = 'html';

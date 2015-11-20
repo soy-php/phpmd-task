@@ -2,7 +2,7 @@
 
 $recipe = new \Soy\Recipe();
 
-$recipe->component('default', function (\Soy\PhpMessDetector\PhpMessDetectorTask $messDetectorTask) {
+$recipe->component('default', function (\Soy\PhpMessDetector\RunTask $messDetectorTask) {
     $messDetectorTask
         ->setBinary('phpmd')
         ->addTarget('.')
@@ -10,7 +10,7 @@ $recipe->component('default', function (\Soy\PhpMessDetector\PhpMessDetectorTask
         ->setThrowExceptionOnError(false)
         ->addExcludePattern('vendor/')
         ->addSuffix('php')
-        ->setReport(\Soy\PhpMessDetector\PhpMessDetectorTask::REPORT_XML)
+        ->setReport(\Soy\PhpMessDetector\RunTask::REPORT_XML)
         ->setStrict(true)
         ->run();
 });
